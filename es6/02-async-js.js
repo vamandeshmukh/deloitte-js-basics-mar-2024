@@ -1,6 +1,6 @@
 // console.log('02-async-js.js');
 
-// args to functions 
+// args to functions
 
 // const fun = (arg) => {
 //     // console.log(arg * 2);
@@ -18,25 +18,24 @@
 // // fun({city: 'Pune', pin: 400001});
 
 
-// callback function 
+// // callback function
 
-const fun = (arg) => {
-    console.log('fun function called');
-    arg();
-};
+// const fun = (arg) => {
+//     console.log('fun function called');
+//     arg();
+// };
 
-// fun(() => { });
+// // fun(() => { });
 
-const anotherFun = () => {
-    console.log('named function called')
-};
+// const anotherFun = () => {
+//     console.log('named function called')
+// };
 
-fun(anotherFun);
+// fun(anotherFun);
 
-fun(() => {
-    console.log('anonymous function called');
- });
-
+// fun(() => {
+//     console.log('anonymous function called');
+// });
 
 // const fun = (arg) => {
 //     console.log(arg * 2);
@@ -48,3 +47,30 @@ fun(() => {
 // // way 2 - named value
 // const num = 25;
 // fun(num);
+
+// =====================================
+// What's the use of callback functions?
+// =====================================
+
+// const getValue = () => {
+//     return { message: 'Have fun!' };
+// };
+
+// const myValue = getValue();
+// console.log(myValue.message);
+
+const getValue = () => {
+    // setTimeout(arg1, arg2);
+    // setTimeout(() => {}, 500);
+    setTimeout(() => {
+        return { message: 'Have fun!' };
+    }, 500);
+};
+
+const myValue = getValue();
+console.log(myValue.message);
+
+
+
+
+
