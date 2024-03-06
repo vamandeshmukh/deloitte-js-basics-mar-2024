@@ -81,13 +81,42 @@
 // Solution 1 - callback function  
 // ============================== 
 
-const getValue = (callback) => {
-    setTimeout(() => {
-        callback({ message: 'Have fun!' });
-    }, 500);
+// const getValue = (callback) => {
+//     setTimeout(() => {
+//         callback({ message: 'Have fun!' });
+//     }, 500);
+// };
+
+// getValue((myValue) => {
+//     console.log(myValue.message);
+// });
+
+// ===================== 
+// Solution 2 - Promise  
+// ===================== 
+
+
+// return new Promise();
+// return new Promise(() => { });
+// return new Promise((resolve, reject) => { });
+
+const getValue = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log('getValue function called');
+            resolve({ message: 'Have fun!' });
+        }, 500);
+    });
 };
 
-getValue((myValue) => {
-    console.log(myValue.message);
-});
+// getValue()
+//     .then()
+//     .catch();
 
+// getValue()
+//     .then(() => {})
+//     .catch(() => {});
+
+getValue()
+    .then((response) => { console.log(response.message); })
+    .catch((error) => { console.log(error); });
