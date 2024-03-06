@@ -81,4 +81,13 @@
 // Solution 1 - callback function  
 // ============================== 
 
+const getValue = (callback) => {
+    setTimeout(() => {
+        callback({ message: 'Have fun!' });
+    }, 500);
+};
+
+getValue((myValue) => {
+    console.log(myValue.message);
+});
 
