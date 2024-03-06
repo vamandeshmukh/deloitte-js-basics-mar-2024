@@ -63,9 +63,11 @@
 // Problem of asynchronous JS 
 // ========================== 
 
-// const getValue = () => {
 //     // setTimeout(arg1, arg2);
 //     // setTimeout(() => {}, 500);
+
+
+// const getValue = () => {
 //     setTimeout(() => {
 //         return { message: 'Have fun!' };
 //     }, 500);
@@ -78,6 +80,5 @@
 // ============================== 
 // Solution 1 - callback function  
 // ============================== 
-
 
 
