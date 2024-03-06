@@ -100,23 +100,41 @@
 // return new Promise(() => { });
 // return new Promise((resolve, reject) => { });
 
+// const getValue = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log('getValue function called');
+//             resolve({ message: 'Have fun!' });
+//         }, 500);
+//     });
+// };
+
+// // getValue()
+// //     .then()
+// //     .catch();
+
+// // getValue()
+// //     .then(() => {})
+// //     .catch(() => {});
+
+// getValue()
+//     .then((response) => { console.log(response.message); })
+//     .catch((error) => { console.log(error); });
+
+
 const getValue = () => {
+    console.log('getValue function called');
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log('getValue function called');
-            resolve({ message: 'Have fun!' });
+            if (10 === 11)
+                resolve({ message: 'Have fun!' });
+            else
+                reject({ message: 'Something is wrong!' });
         }, 500);
     });
 };
 
-// getValue()
-//     .then()
-//     .catch();
-
-// getValue()
-//     .then(() => {})
-//     .catch(() => {});
-
 getValue()
     .then((response) => { console.log(response.message); })
-    .catch((error) => { console.log(error); });
+    .catch((error) => { console.log(error.message); });
+
