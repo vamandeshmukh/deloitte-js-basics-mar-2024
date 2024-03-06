@@ -39,21 +39,90 @@
 
 // object 
 
-const employee = {
-    eid: 101,
-    firstName: 'Sonu',
-    lastName: 'Singh',
-    salary: 10.5,
-    isMarried: false,
-    phones: [9876, 9809],
-    address: { city: 'Mumbai', pin: 400001 }
+// const employee = {
+//     eid: 101,
+//     firstName: 'Sonu',
+//     lastName: 'Singh',
+//     salary: 10.5,
+//     isMarried: false,
+//     phones: [9876, 9809],
+//     address: { city: 'Mumbai', pin: 400001 }
+// };
+
+// // console.log(employee);
+// console.log(employee.firstName);
+
+// // object 
+// const employee = { firstName: 'Sonu', lastName: 'Reddy' };
+
+// // object destructuring 
+// let { firstName, lastName } = employee;
+
+// console.log(firstName);
+
+// arrow functions 
+
+// // old JS 
+
+// function fun1() {
+//     console.log('fun1 called');
+// };
+
+// fun1();
+
+// // new js arrow function 
+
+// const fun2 = () => {
+//     console.log('fun2 called');
+// };
+
+// fun2();
+
+
+// classes in JS 
+
+// class Employee {
+
+//     constructor(firstName, salary) {
+//         this.firstName = firstName;
+//         this.salary = salary;
+//     };
+
+//     printSalary() {
+//         console.log(this.firstName + ' gets ' + this.salary);
+//     };
+// };
+
+// const emp = new Employee('Sonu', 10.5);
+// emp.printSalary();
+
+
+// for of loop, for in loop 
+
+// const myFriends = ['Sonu', 'Monu', 'Tonu'];
+
+// console.log(myFriends);
+
+// for (let friend of myFriends) {
+//     console.log(friend);
+// }
+
+// // array functions 
+
+// const prices = [2, 6, 5, 3, 8, 4];
+// console.log(prices);
+// let increseasedPrices = prices.map(price => price * 2);
+// console.log(increseasedPrices);
+// let evenPrices = prices.filter(abc => abc % 2 === 0);
+// console.log(evenPrices);
+
+// default args to functions 
+
+const addNums = (a, b) => {
+    console.log(a + b);
 };
 
-// console.log(employee);
-console.log(employee.firstName);
-
-
-
-
-
-
+addNums();
+addNums(10);
+addNums(10, 20);
+addNums(10, 20, 30);
