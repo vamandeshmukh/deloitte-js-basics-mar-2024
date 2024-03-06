@@ -59,18 +59,25 @@
 // const myValue = getValue();
 // console.log(myValue.message);
 
-const getValue = () => {
-    // setTimeout(arg1, arg2);
-    // setTimeout(() => {}, 500);
-    setTimeout(() => {
-        return { message: 'Have fun!' };
-    }, 500);
-};
+// ========================== 
+// Problem of asynchronous JS 
+// ========================== 
 
-const myValue = getValue();
-console.log(myValue.message);
+// const getValue = () => {
+//     // setTimeout(arg1, arg2);
+//     // setTimeout(() => {}, 500);
+//     setTimeout(() => {
+//         return { message: 'Have fun!' };
+//     }, 500);
+// };
+
+// const myValue = getValue();
+// console.log(myValue.message); // TypeError: Cannot read properties of undefined (reading 'message')
 
 
+// ============================== 
+// Solution 1 - callback function  
+// ============================== 
 
 
 
