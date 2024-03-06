@@ -34,6 +34,8 @@ array, object
 - varibales declaration 
 
 
+- Asynchronous JavaScript 
+
 
 
 
