@@ -118,11 +118,32 @@
 
 // default args to functions 
 
-const addNums = (a, b) => {
-    console.log(a + b);
+// const addNums = (a, b) => {
+//     console.log(a + b);
+// };
+
+// addNums();
+// addNums(10);
+// addNums(10, 20);
+// addNums(10, 20, 30);
+
+// spread syntax 
+
+// const nums = [10, 20, 30];
+// const moreNums = [...nums, 40, 50, 60];
+
+// console.log(moreNums);
+
+// rest parameters 
+
+const addNums = (...args) => {
+
+    return args.reduce((total, nums) => total + nums, 0);
+
 };
 
-addNums();
-addNums(10);
-addNums(10, 20);
-addNums(10, 20, 30);
+console.log(addNums(10, 20));
+console.log(addNums(10, 20, 30));
+console.log(addNums(10, 20, 30, 40));
+
+// template literals 
