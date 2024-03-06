@@ -19,6 +19,6 @@ console.log(salary);
 salary = 12.75;
 console.log(salary);
 
-salary = 13.5;
+salary = 'abc';
 console.log(salary);
 
