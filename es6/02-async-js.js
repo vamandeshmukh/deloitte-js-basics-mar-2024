@@ -121,7 +121,6 @@
 //     .then((response) => { console.log(response.message); })
 //     .catch((error) => { console.log(error); });
 
-
 const getValue = () => {
     console.log('getValue function called');
     return new Promise((resolve, reject) => {
