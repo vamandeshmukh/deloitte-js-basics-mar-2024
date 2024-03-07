@@ -12,13 +12,34 @@
 // tsc app.ts 
 // app.js will be generated 
 // node app.js 
+// -----------
 
-let salary: number = 10.5;
-console.log(salary);
+// ts config 
 
-salary = 12.75;
-console.log(salary);
+// npx tsc --init
+// OR 
+// tsc --init
 
-salary = 'abc';
-console.log(salary);
+
+
+
+// let salary: number = 10.5;
+// console.log(salary);
+
+// salary = 12.75;
+// console.log(salary);
+
+// // salary = 'abc';
+// console.log(salary);
+
+
+// let salary: number = 20;
+
+const addNums = (a: number, b: number): number => {
+    return a + b;
+    // return 'abc'; // error 
+};
+
+console.log(addNums(10, 20));
+
 
